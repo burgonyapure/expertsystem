@@ -16,7 +16,7 @@ namespace expertsystem
         }
         public void CollectAnswer()
         {
-
+            
         }
         public bool GetAnswersByQuestion(string questionID)
         {
