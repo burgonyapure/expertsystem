@@ -18,7 +18,7 @@ namespace expertsystem
         {
 
         }
-        public bool GetAnswersByQuestion()
+        public bool GetAnswersByQuestion(string questionID)
         {
             return false;
         }
