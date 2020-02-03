@@ -6,9 +6,12 @@ namespace expertsystem
 {
     class ESProvider
     {
-        public ESProvider()
+        FactParser fact = new FactParser();
+        RuleParser rule = new RuleParser();
+        public ESProvider(FactParser fact,RuleParser rule)
         {
-            
+            this.fact = fact;
+            this.rule = rule;
         }
     }
 }
