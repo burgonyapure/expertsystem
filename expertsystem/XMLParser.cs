@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Xml;
+
 namespace expertsystem
 {
-    class RuleParser :XMLParser
+    abstract class XMLParser
     {
-        public override void loadXmlDocument(string XmlPath)
-        {
-        }
+        abstract public void loadXmlDocument(String XmlPath);
+        
+
+        
     }
 }

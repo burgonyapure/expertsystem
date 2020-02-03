@@ -4,7 +4,14 @@ using System.Text;
 
 namespace expertsystem
 {
-    class FactParser
+    class FactParser:XMLParser
     {
+        public override void loadXmlDocument(string XmlPath)
+        {
+            /*XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(XmlPath);
+            foreach (XmlNode xmlNode in xmlDoc.DocumentElement)
+       */ }
+
     }
 }
