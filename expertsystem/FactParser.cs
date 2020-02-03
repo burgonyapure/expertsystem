@@ -12,6 +12,9 @@ namespace expertsystem
             xmlDoc.Load(XmlPath);
             foreach (XmlNode xmlNode in xmlDoc.DocumentElement)
        */ }
-
+        public FactRepository GetFactRepository()
+        {
+            return null; 
+        }
     }
 }
