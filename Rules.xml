@@ -35,12 +35,14 @@
     </Rule>
     <Rule id="balcornot">
         <Question>Do you want balcony/garden?</Question>
-        <Selection value="true">
-            <SingleValue value="yes"></SingleValue>
-        </Selection>
-        <Selection value="false">
-            <SingleValue value="no"></SingleValue>
-        </Selection>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"></SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"></SingleValue>
+            </Selection>
+        </Answer>
     </Rule>
     <Rule id="extra">
         <Question>Extras?</Question>

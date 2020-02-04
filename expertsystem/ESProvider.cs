@@ -4,21 +4,22 @@ using System.Text;
 
 namespace expertsystem
 {
+    
     class ESProvider
     {
-        private FactParser fact = new FactParser();
-        private RuleParser rule = new RuleParser();
-
-        public ESProvider(FactParser fact,RuleParser rule)
+        private FactParser factParser;
+        private RuleParser ruleParser;
+        public ESProvider(FactParser factParser, RuleParser ruleparser)
         {
-            this.fact = fact;
-            this.rule = rule;
-        }
-        public void CollectAnswer()
-        {
+            this.factParser = factParser;
+            this.ruleParser = ruleparser;
 
         }
-        public bool GetAnswersByQuestion()
+        public void collectAnswers()
+        {
+            
+        }
+        public bool GetAnswersByQuestion(string questionID)
         {
             return false;
         }
