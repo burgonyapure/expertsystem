@@ -8,6 +8,10 @@ namespace expertsystem
     {
         public string id;
         public string description;
-
+        public Fact(string id,string description)
+        {
+            this.id = id;
+            this.description = description;
+        }
     }
 }

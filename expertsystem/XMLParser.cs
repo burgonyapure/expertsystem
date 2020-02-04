@@ -7,23 +7,14 @@ namespace expertsystem
 {
     abstract class XMLParser
     {
-        public static void loadXmlDocument(String XmlPath)
+        public static XmlDocument loadXmlDocument(String XmlPath)
         {
             
             XmlDocument doc = new XmlDocument();
             doc.Load(XmlPath);
+            return doc;
 
-            List<Fact> facts = new List<Fact>();
-            foreach(XmlNode factNode in doc.DocumentElement.ChildNodes)
-            {
-                string factId = factNode.Attributes["id"].Value;
-                foreach (XmlNode descNode in factNode.ChildNodes)
-                {
-                    string descValue = descNode.Attributes["value"].Value;
-                    Fact fact = new Fact(factId, descValue);
-                    facts.Add(fact);
-
-                    XmlNode evalsNode = descNode.FirstChild;
+            
                     ////foreach (XmlNode evalNode in evalsNode.ChildNodes)
                     ////{
                     //    string evalId = evalNode.Attributes["id"].Value;
@@ -48,5 +39,5 @@ namespace expertsystem
         
 
         
-    }
-}
+    
+

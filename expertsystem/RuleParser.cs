@@ -6,8 +6,6 @@ namespace expertsystem
 {
     class RuleParser :XMLParser
     {
-        public override void loadXmlDocument(string XmlPath)
-        {
-        }
+        
     }
 }
