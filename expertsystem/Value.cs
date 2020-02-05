@@ -8,7 +8,7 @@ namespace expertsystem
     {
         public bool getSelectionType()
         {
-            
+            return true;
         }
     }
 }

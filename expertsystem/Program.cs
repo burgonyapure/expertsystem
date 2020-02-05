@@ -7,9 +7,9 @@ namespace expertsystem
     {
         static void Main(string[] args)
         {
-            
-            FactParser.ReadFacts();
-           
+            FactParser fact = new FactParser();
+            RuleParser rule = new RuleParser();
+            ESProvider esp = new ESProvider(fact,rule);
         }
     }
 }
