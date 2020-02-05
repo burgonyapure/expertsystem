@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace expertsystem
 {
@@ -6,7 +7,8 @@ namespace expertsystem
     {
         static void Main(string[] args)
         {
-            FactParser.ReadFacts();
+            Dictionary<string, string> factDict = new Dictionary<string, string>();
+            FactParser.ReadFacts(factDict);
         }
     }
 }

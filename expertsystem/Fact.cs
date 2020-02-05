@@ -8,10 +8,12 @@ namespace expertsystem
     {
         public string id;
         public string description;
-        public Fact(string id,string description)
+        public List<bool> evals;
+        public Fact(string id,string description, List<bool> evals)
         {
             this.id = id;
             this.description = description;
+            this.evals = evals;
         }
     }
 }

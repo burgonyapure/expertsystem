@@ -6,59 +6,52 @@ using System.Xml;
 namespace expertsystem
 {
     class FactParser : XMLParser
-    {
-        Dictionary<string, string> factDict { get; set; }
-
+    {   
         public FactRepository GetFactRepository()
         {
             return null;
         }
-        public static void ReadFacts()
+        public static void ReadFacts(Dictionary<string, string> factDict)
         {
             XmlDocument doc = XMLParser.loadXmlDocument("Facts.xml");
             List<Fact> facts = new List<Fact>();
-            var factDict = new Dictionary<string, string>();
+            List<List<bool>> Eval = new List<List<bool>>();
+            
             foreach (XmlNode factNode in doc.DocumentElement.ChildNodes)
             {
+                
                 string factId = factNode.Attributes["id"].Value;
+                string descValue = null;
                 foreach (XmlNode descNode in factNode.ChildNodes)
                 {
+                    List<bool> evals = new List<bool>();
                     if (descNode.Name.Equals("Evals"))
                     {
-                        foreach(XmlNode evalNode in descNode.ChildNodes)
+                        
+                        foreach (XmlNode evalNode in descNode.ChildNodes)
                         {
-                            if (factDict.ContainsKey(factId))
-                            {
-                                
-                                factDict[factId] += evalNode.InnerText;
-                            }
-                            else
-                            {
-                                
-                                factDict.Add(factId, evalNode.InnerText);
-                            }
+                            evals.Add(Convert.ToBoolean(evalNode.InnerText));
                         }
-
+                        
                     }
                     else
                     {
-                        string descValue = descNode.Attributes["value"].Value;
-                        Fact fact = new Fact(factId, descValue);
-                        facts.Add(fact);
-
-                        XmlNode evalsNode = descNode.FirstChild;
+                        descValue = descNode.Attributes["value"].Value;
                     }
+                    Eval.Add(evals);
+                    
                 }
+                Fact fact = new Fact(factId, descValue, Eval[0]);
+                facts.Add(fact);
             }
             foreach(Fact fact1 in facts)
             {
                 Console.WriteLine(fact1.description);
+                Console.WriteLine("{0},{1}",fact1.evals[0],fact1.evals[1]);
+               
             }
-            foreach(string keys in factDict.Keys)
-            {
-                Console.WriteLine(keys);
-                Console.WriteLine(factDict[keys]);
-            }
+            
+            Console.ReadLine();
         }
     }
 }

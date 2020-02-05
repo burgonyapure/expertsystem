@@ -15,7 +15,7 @@ namespace expertsystem
             this.ruleParser = ruleparser;
 
         }
-        public void collectAnswers()
+        public void CollectAnswers()
         {
             
         }
