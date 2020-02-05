@@ -13,5 +13,6 @@ namespace expertsystem
             this.parameters = parameters;
             this.selectionType = selectionType;
         }
+        
     }
 }
