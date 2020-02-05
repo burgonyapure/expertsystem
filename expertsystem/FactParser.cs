@@ -6,12 +6,13 @@ using System.Xml;
 namespace expertsystem
 {
     class FactParser : XMLParser
-    {   
+    {
         public FactRepository GetFactRepository()
         {
+
             return null;
         }
-        public static void ReadFacts(Dictionary<string, string> factDict)
+        public static List<Fact> ReadFacts()
         {
             XmlDocument doc = XMLParser.loadXmlDocument("Facts.xml");
             List<Fact> facts = new List<Fact>();
@@ -47,11 +48,10 @@ namespace expertsystem
             foreach(Fact fact1 in facts)
             {
                 Console.WriteLine(fact1.description);
-                Console.WriteLine("{0},{1}",fact1.evals[0],fact1.evals[1]);
+                Console.WriteLine("{0},{1},{2},{3},{4}",fact1.evals[0],fact1.evals[1], fact1.evals[2], fact1.evals[3], fact1.evals[4]);
                
             }
-            
-            Console.ReadLine();
+            return facts;
         }
     }
 }

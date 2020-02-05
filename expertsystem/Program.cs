@@ -7,8 +7,9 @@ namespace expertsystem
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> factDict = new Dictionary<string, string>();
-            FactParser.ReadFacts(factDict);
+            
+            FactParser.ReadFacts();
+           
         }
     }
 }
