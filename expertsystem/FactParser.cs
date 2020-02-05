@@ -15,7 +15,7 @@ namespace expertsystem
         {
             XmlDocument doc = XMLParser.loadXmlDocument("Facts.xml");
             List<Fact> facts = new List<Fact>();
-            List<List<bool>> Eval = new List<List<bool>>();
+            List<bool> Eval = new List<bool>();
             
             foreach (XmlNode factNode in doc.DocumentElement.ChildNodes)
             {
@@ -38,10 +38,10 @@ namespace expertsystem
                     {
                         descValue = descNode.Attributes["value"].Value;
                     }
-                    Eval.Add(evals);
+                    Eval = evals;
                     
                 }
-                Fact fact = new Fact(factId, descValue, Eval[0]);
+                Fact fact = new Fact(factId, descValue, Eval);
                 facts.Add(fact);
             }
             foreach(Fact fact1 in facts)
