@@ -18,8 +18,9 @@ namespace expertsystem
         }
         public bool getEvaluatedAnswer(string input)
         {
-            Answer fakeAnswer = new Answer();
-            return fakeAnswer.evaluateAnswerByInput(input);
+            //Answer fakeAnswer = new Answer();
+            //return fakeAnswer.evaluateAnswerByInput(input);
+            return true;
         }
             
     }

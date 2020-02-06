@@ -7,8 +7,10 @@ namespace expertsystem
     {
         static void Main(string[] args)
         {
-            
-            
+
+            RuleParser rp = new RuleParser();
+            rp.test();
+            Console.ReadLine();
            
         }
     }
