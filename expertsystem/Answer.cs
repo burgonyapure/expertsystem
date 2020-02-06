@@ -7,21 +7,23 @@ namespace expertsystem
     class Answer
     {
         bool answer;
-        public Answer (bool answer)
+        List<string> inputPattern;
+        public Answer (bool answer, List<string> inputPattern)
         {
             this.answer = answer;
+            this.inputPattern = inputPattern;
         }
-        public Answer()
-        {
+        //public Answer()
+        //{
 
-        }
-        
+        //}
+
         public bool evaluateAnswerByInput(string input)
         {
             Value value;
 
-            value.InputPattern.Contains(input);
-                return value.getSelectionType();
+            //value.InputPattern.Contains(input);
+            //   return value.getSelectionType();
             /*
             if (input == "yes")
             {
@@ -32,6 +34,7 @@ namespace expertsystem
                 return false;
             }
             else throw new Exception("nincs ilyen bazdmeg");*/
+            return true;
         }
     }
 }
