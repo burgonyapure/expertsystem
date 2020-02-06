@@ -6,7 +6,7 @@ namespace expertsystem
 {
     class RuleParser : XMLParser
     {
-        private RuleRepository ruleRepo;
+        private RuleRepository ruleRepo { get; set; }
         
         public RuleParser()
         {
@@ -21,7 +21,7 @@ namespace expertsystem
             //}
         }
 
-        public void test()
+        public void readRules()
         {
             loadXmlDocument("Rules.xml");
             ruleRepo = new RuleRepository();
@@ -56,11 +56,12 @@ namespace expertsystem
                         Console.WriteLine("Cannot happen");
                     }
                 }
+                
                 Answer answer = new Answer(abool,inputPattern);
                 Question question = new Question(ájdí, q, answer);
-                
+                ruleRepo.addQuestion(question);
                 //ruleRepo.addQuestion(question);
-                
+
             }
         }
 

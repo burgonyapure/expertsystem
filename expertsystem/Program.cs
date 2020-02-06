@@ -8,9 +8,12 @@ namespace expertsystem
         static void Main(string[] args)
         {
 
-            RuleParser rp = new RuleParser();
-            rp.test();
-            Console.ReadLine();
+            RuleParser ruleParser = new RuleParser();
+            FactParser factParser = new FactParser();
+            ESProvider esProvider = new ESProvider(factParser,ruleParser);
+            ruleParser.readRules();
+            esProvider.CollectAnswers();
+
            
         }
     }

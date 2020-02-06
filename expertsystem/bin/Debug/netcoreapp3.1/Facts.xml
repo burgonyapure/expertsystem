@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Facts>
+    <Fact id="worsth">
+        <Description value="Retkes Putri"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="famsize">true</Eval>
+            <Eval id="flatornot">false</Eval>
+            <Eval id="balconornot">false</Eval>
+            <Eval id="extra">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="middleh">
+        <Description value="Családi Vityilló"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="famsize">true</Eval>
+            <Eval id="flatornot">false</Eval>
+            <Eval id="balconornot">true</Eval>
+            <Eval id="extra">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="besth">
+        <Description value="Fullos"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="famsize">false</Eval>
+            <Eval id="flatornot">false</Eval>
+            <Eval id="balconornot">true</Eval>
+            <Eval id="extra">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="worstf">
+        <Description value="Minek"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="famsize">false</Eval>
+            <Eval id="flatornot">true</Eval>
+            <Eval id="balconornot">false</Eval>
+            <Eval id="extra">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="middlef">    
+        <Description value="Lakótelepi Lakáska"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="famsize">true</Eval>
+            <Eval id="flatornot">true</Eval>
+            <Eval id="balconornot">false</Eval>
+            <Eval id="extra">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="bestf">
+    <Description value="Pentháusz"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="famsize">true</Eval>
+            <Eval id="flatornot">true</Eval>
+            <Eval id="balconornot">true</Eval>
+            <Eval id="extra">true</Eval>
+        </Evals>
+    </Fact>
+</Facts>

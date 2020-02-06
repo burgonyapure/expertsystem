@@ -21,7 +21,8 @@ namespace expertsystem
             IEnumerator<Question> enumerator = ruleRepository.GetEnumerator();
             while (enumerator.MoveNext())
             {
-                Console.WriteLine(enumerator.Current);
+                Console.WriteLine(enumerator.Current.id);
+                Console.WriteLine(enumerator.Current.question);
             }
         }
         public bool GetAnswersByQuestion(string questionID)

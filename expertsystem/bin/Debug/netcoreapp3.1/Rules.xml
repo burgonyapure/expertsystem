@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rules>
+    <Rule id="money">
+        <Question>Do you have 210.000 RON?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"></SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"></SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="famsize">
+        <Question>Is it a big family? (4 or more)</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"></SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"></SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="flatornot">
+        <Question>Do you want a flat or a house?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"></SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"></SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="balcornot">
+        <Question>Do you want balcony/garden?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"></SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"></SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="extra">
+        <Question>Extras?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="sex dungeon,pool,movie theathre,lift,sauna,kandalló,wine cellar"></MultipleValue>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="nothing,roof,woof,walls"></MultipleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+</Rules>
