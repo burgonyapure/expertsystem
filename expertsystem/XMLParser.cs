@@ -7,12 +7,12 @@ namespace expertsystem
 {
     abstract class XMLParser
     {
-        public static XmlDocument loadXmlDocument(String XmlPath)
+        protected XmlDocument doc;
+        public void loadXmlDocument(String XmlPath)
         {
-            
-            XmlDocument doc = new XmlDocument();
+
+            doc = new XmlDocument();
             doc.Load(XmlPath);
-            return doc;
 
             
                     ////foreach (XmlNode evalNode in evalsNode.ChildNodes)

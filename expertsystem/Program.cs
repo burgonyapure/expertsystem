@@ -8,7 +8,7 @@ namespace expertsystem
         static void Main(string[] args)
         {
             
-            FactParser.ReadFacts();
+            
            
         }
     }

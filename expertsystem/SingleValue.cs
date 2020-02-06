@@ -13,5 +13,15 @@ namespace expertsystem
             this.param = param;
             this.selectionType = selectionType;
         }
+        public override List<string> getInputPattern()
+        {
+            List<string> inputPattern = new List<string>();
+            inputPattern.Add(param);
+            return inputPattern;
+        }
+        public override bool getSelectionType()
+        {
+            return selectionType;
+        }
     }
 }

@@ -6,9 +6,8 @@ namespace expertsystem
 {
     abstract class Value
     {
-        public bool getSelectionType()
-        {
-            
-        }
+        public abstract bool getSelectionType();
+        public abstract List<string> getInputPattern();
+        
     }
 }

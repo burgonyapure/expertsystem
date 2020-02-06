@@ -10,7 +10,8 @@ namespace expertsystem
        
         private List<Fact> ReadFacts()
         {
-            XmlDocument doc = XMLParser.loadXmlDocument("Facts.xml");
+            loadXmlDocument("Facts.xml");
+
             List<Fact> facts = new List<Fact>();
             List<bool> Eval = new List<bool>();
 

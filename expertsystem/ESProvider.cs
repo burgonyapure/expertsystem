@@ -9,15 +9,20 @@ namespace expertsystem
     {
         private FactParser factParser;
         private RuleParser ruleParser;
-        public ESProvider(FactParser factParser, RuleParser ruleparser)
+        public ESProvider(FactParser factParser, RuleParser ruleParser)
         {
             this.factParser = factParser;
-            this.ruleParser = ruleparser;
+            this.ruleParser = ruleParser;
 
         }
         public void CollectAnswers()
         {
-            
+            RuleRepository ruleRepository = ruleParser.GetRuleRepository();
+            IEnumerator<Question> enumerator = ruleRepository.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
         }
         public bool GetAnswersByQuestion(string questionID)
         {
