@@ -58,6 +58,7 @@ namespace expertsystem
                 }
                 Answer answer = new Answer(abool,inputPattern);
                 Question question = new Question(ájdí, q, answer);
+                
                 //ruleRepo.addQuestion(question);
                 
             }
