@@ -7,6 +7,7 @@ namespace expertsystem
     class Answer
     {
         bool answer;
+        string inputPattern;
         public Answer (bool answer)
         {
             this.answer = answer;

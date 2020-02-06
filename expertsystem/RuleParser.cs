@@ -14,8 +14,7 @@ namespace expertsystem
             ruleRepo = new RuleRepository();
             foreach (XmlNode node in doc.DocumentElement)
             {
-                Answer answer = new Answer();
-                Question question = new Question("", "", answer);
+                
                 ruleRepo.addQuestion(question);
             }
         }
