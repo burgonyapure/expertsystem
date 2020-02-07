@@ -9,3 +9,14 @@ C:\Users\Gergő\Desktop\Codecool\expsystem\expertsystem\obj\Debug\netcoreapp3.1\
 C:\Users\Gergő\Desktop\Codecool\expsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.AssemblyInfo.cs
 C:\Users\Gergő\Desktop\Codecool\expsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.dll
 C:\Users\Gergő\Desktop\Codecool\expsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.pdb
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.exe
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.deps.json
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.runtimeconfig.json
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.runtimeconfig.dev.json
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.dll
+C:\Users\teszt\source\repos\expertsystem\expertsystem\bin\Debug\netcoreapp3.1\expertsystem.pdb
+C:\Users\teszt\source\repos\expertsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.csprojAssemblyReference.cache
+C:\Users\teszt\source\repos\expertsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.AssemblyInfoInputs.cache
+C:\Users\teszt\source\repos\expertsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.AssemblyInfo.cs
+C:\Users\teszt\source\repos\expertsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.dll
+C:\Users\teszt\source\repos\expertsystem\expertsystem\obj\Debug\netcoreapp3.1\expertsystem.pdb

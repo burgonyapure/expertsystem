@@ -8,7 +8,7 @@ namespace expertsystem
     class FactParser : XMLParser
     {
        
-        private List<Fact> ReadFacts()
+        public List<Fact> ReadFacts()
         {
             loadXmlDocument("Facts.xml");
 

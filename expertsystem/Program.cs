@@ -13,8 +13,10 @@ namespace expertsystem
             ESProvider esProvider = new ESProvider(factParser,ruleParser);
             ruleParser.readRules();
             esProvider.CollectAnswers();
+            
+            esProvider.Evaluate();
+            Console.ReadLine();
 
-           
         }
     }
 }
